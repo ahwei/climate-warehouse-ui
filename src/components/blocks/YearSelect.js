@@ -1,9 +1,9 @@
-import React from 'react';
-import DateAdapter from '@mui/lab/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import styled, { css, withTheme } from 'styled-components';
 import TextField from '@mui/material/TextField';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs as DateAdapter } from '@mui/x-date-pickers/AdapterDayjs';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import React from 'react';
+import styled, { css, withTheme } from 'styled-components';
 
 const YearSelectVariantEnum = {
   error: 'error',
