@@ -1,10 +1,10 @@
 import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs as DateAdapter } from '@mui/x-date-pickers/AdapterDayjs';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import dayjs from 'dayjs';
 import React from 'react';
 import styled, { css, withTheme } from 'styled-components';
-
 const YearSelectVariantEnum = {
   error: 'error',
 };
@@ -73,12 +73,12 @@ const StyledTextField = styled(TextField)`
 const YearSelect = withTheme(
   ({ size, yearValue, onChange, disabled, variant, onBlur, name }) => (
     <LocalizationProvider dateAdapter={DateAdapter}>
-      <DesktopDatePicker
+      <DatePicker
         inputFormat="YYYY"
         mask="____"
         RegExp="/^d{4}$/"
         views={['year']}
-        value={yearValue ? `${yearValue}` : null}
+        value={yearValue ? dayjs(`${yearValue}-01-01`) : null}
         onChange={newValue =>
           newValue ? onChange(newValue.$y) : onChange(null)
         }

@@ -1,39 +1,39 @@
-import _ from 'lodash';
-import React, { useMemo, useEffect, useCallback, useState } from 'react';
-import { useIntl, FormattedMessage } from 'react-intl';
-import { useSelector } from 'react-redux';
 import { useFormikContext } from 'formik';
+import _ from 'lodash';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
+import { useSelector } from 'react-redux';
 
 import {
-  StandardInput,
+  Body,
+  BodyContainer,
+  DescriptionIcon,
+  FieldRequired,
+  FormContainerStyle,
+  FormikError,
+  HrSpanTwoColumnsContainer,
+  InputContainer,
   InputSizeEnum,
   InputStateEnum,
-  ModalFormContainerStyle,
-  FormContainerStyle,
-  BodyContainer,
-  Body,
-  DescriptionIcon,
-  ToolTipContainer,
+  InputVariantEnum,
   LabelContainer,
-  FieldRequired,
-  InputContainer,
+  ModalFormContainerStyle,
+  RequiredContainer,
+  Select,
+  SelectCreatable,
+  SelectSizeEnum,
+  SelectStateEnum,
+  SelectTypeEnum,
+  SelectVariantEnum,
+  SimpleSelectStateEnum,
+  SimpleSelectVariantEnum,
+  SpanTwoColumnsContainer,
+  StandardInput,
   StyledFieldContainer,
   StyledLabelContainer,
-  InputVariantEnum,
+  ToolTipContainer,
   YearSelect,
   YearSelectVariantEnum,
-  RequiredContainer,
-  SpanTwoColumnsContainer,
-  HrSpanTwoColumnsContainer,
-  SimpleSelectVariantEnum,
-  FormikError,
-  SelectSizeEnum,
-  SelectTypeEnum,
-  SelectStateEnum,
-  Select,
-  SelectVariantEnum,
-  SelectCreatable,
-  SimpleSelectStateEnum,
 } from '..';
 
 const UnitDetailsForm = () => {

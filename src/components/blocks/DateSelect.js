@@ -3,7 +3,8 @@ import React from 'react';
 import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs as DateAdapter } from '@mui/x-date-pickers/AdapterDayjs';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+
 import styled, { css, withTheme } from 'styled-components';
 
 import { formatDate, getISODate, getIsDateValid } from '../../utils/dateUtils';
@@ -84,7 +85,7 @@ const DateSelect = withTheme(
     name,
   }) => (
     <LocalizationProvider dateAdapter={DateAdapter}>
-      <DesktopDatePicker
+      <DatePicker
         inputFormat="YYYY-MM-DD"
         mask="____-__-__"
         RegExp="/^d{4}-d{2}-d{2}$/"
