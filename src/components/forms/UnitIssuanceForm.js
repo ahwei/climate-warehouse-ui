@@ -1,29 +1,29 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { useIntl, FormattedMessage } from 'react-intl';
-import { useSelector } from 'react-redux';
 import { useFormikContext } from 'formik';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { FormattedMessage, useIntl } from 'react-intl';
+import { useSelector } from 'react-redux';
 
 import {
-  StandardInput,
-  InputSizeEnum,
-  InputStateEnum,
-  Divider,
-  ModalFormContainerStyle,
-  FormContainerStyle,
-  BodyContainer,
   Body,
+  BodyContainer,
   DateSelect,
   DescriptionIcon,
-  ToolTipContainer,
-  LabelContainer,
-  StyledLabelContainer,
-  StyledFieldContainer,
+  Divider,
+  FormContainerStyle,
   InputContainer,
-  SelectSizeEnum,
-  SelectTypeEnum,
-  SelectStateEnum,
+  InputSizeEnum,
+  InputStateEnum,
+  LabelContainer,
+  ModalFormContainerStyle,
   Select,
+  SelectSizeEnum,
+  SelectStateEnum,
+  SelectTypeEnum,
   SpanTwoColumnsContainer,
+  StandardInput,
+  StyledFieldContainer,
+  StyledLabelContainer,
+  ToolTipContainer,
 } from '..';
 import { SelectVariantEnum } from '../form/Select';
 

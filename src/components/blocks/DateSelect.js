@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs as DateAdapter } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-
+import dayjs from 'dayjs';
 import styled, { css, withTheme } from 'styled-components';
 
 import { formatDate, getISODate, getIsDateValid } from '../../utils/dateUtils';
@@ -83,33 +83,35 @@ const DateSelect = withTheme(
     variant,
     onBlur,
     name,
-  }) => (
-    <LocalizationProvider dateAdapter={DateAdapter}>
-      <DatePicker
-        inputFormat="YYYY-MM-DD"
-        mask="____-__-__"
-        RegExp="/^d{4}-d{2}-d{2}$/"
-        views={['year', 'month', 'day']}
-        value={getIsDateValid(dateValue) ? getISODate(dateValue) : null}
-        onChange={newValue =>
-          getIsDateValid(newValue)
-            ? setDateValue(formatDate(newValue))
-            : setDateValue(newValue)
-        }
-        disabled={disabled}
-        renderInput={params => (
-          <StyledTextField
-            {...params}
-            disabled={disabled}
-            size={size}
-            dateselectvariant={variant}
-            name={name}
-            onBlur={onBlur}
-          />
-        )}
-      />
-    </LocalizationProvider>
-  ),
+  }) => {
+    return (
+      <LocalizationProvider dateAdapter={DateAdapter}>
+        <DatePicker
+          inputFormat="YYYY-MM-DD"
+          mask="____-__-__"
+          RegExp="/^d{4}-d{2}-d{2}$/"
+          views={['year', 'month', 'day']}
+          value={getIsDateValid(dateValue) ? getISODate(dateValue) : null}
+          onChange={newValue =>
+            getIsDateValid(newValue)
+              ? setDateValue(formatDate(newValue))
+              : setDateValue(newValue)
+          }
+          disabled={disabled}
+          renderInput={params => (
+            <StyledTextField
+              {...params}
+              disabled={disabled}
+              size={size}
+              dateselectvariant={variant}
+              name={name}
+              onBlur={onBlur}
+            />
+          )}
+        />
+      </LocalizationProvider>
+    );
+  },
 );
 
 export { DateSelect, DateSelectVariantEnum };

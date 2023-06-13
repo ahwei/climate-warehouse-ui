@@ -1,28 +1,28 @@
-import _ from 'lodash';
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
-import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
 import { Step, StepLabel } from '@mui/material';
-import { useIntl } from 'react-intl';
 import { Formik, setNestedObjectValues } from 'formik';
+import _ from 'lodash';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { useIntl } from 'react-intl';
+import { useDispatch, useSelector } from 'react-redux';
+import styled from 'styled-components';
 
 import {
-  Modal,
-  TabPanel,
-  modalTypeEnum,
-  UnitDetailsForm,
-  UnitLabelForm,
-  UnitIssuanceForm,
   FormikRepeater,
+  Modal,
   Stepper,
+  TabPanel,
+  UnitDetailsForm,
+  UnitIssuanceForm,
+  UnitLabelForm,
+  modalTypeEnum,
 } from '..';
-import { unitsSchema } from '../../store/validations';
 import {
   getIssuances,
+  getMyProjects,
   getPaginatedData,
   updateUnitsRecord,
-  getMyProjects,
 } from '../../store/actions/climateWarehouseActions';
+import { unitsSchema } from '../../store/validations';
 import {
   cleanObjectFromEmptyFieldsOrArrays,
   formatAPIData,
@@ -136,8 +136,7 @@ const UnitEditModal = ({ onClose, record, modalSizeAndPosition }) => {
         }
         cleanObjectFromEmptyFieldsOrArrays(dataToSend);
         dispatch(updateUnitsRecord(dataToSend));
-      }}
-    >
+      }}>
       {formik => (
         <Modal
           modalSizeAndPosition={modalSizeAndPosition}
@@ -173,8 +172,7 @@ const UnitEditModal = ({ onClose, record, modalSizeAndPosition }) => {
                       onClick={() =>
                         onChangeStep({ formik, desiredStep: index })
                       }
-                      sx={{ cursor: 'pointer' }}
-                    >
+                      sx={{ cursor: 'pointer' }}>
                       <StepLabel>
                         {intl.formatMessage({
                           id: step,
@@ -186,8 +184,7 @@ const UnitEditModal = ({ onClose, record, modalSizeAndPosition }) => {
               <TabPanel
                 style={{ paddingTop: '1.25rem' }}
                 value={tabValue}
-                index={0}
-              >
+                index={0}>
                 <UnitDetailsForm />
               </TabPanel>
               <TabPanel value={tabValue} index={1}>

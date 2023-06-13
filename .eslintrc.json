@@ -10,19 +10,12 @@
       "jsx": true
     }
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:mocha/recommended"
-  ],
+  "extends": ["plugin:react/recommended", "plugin:mocha/recommended"],
   "rules": {
     "react/prop-types": "off",
     "mocha/no-mocha-arrows": 0
   },
-  "plugins": [
-    "react",
-    "mocha"
-  ],
+  "plugins": ["react", "mocha"],
   "settings": {
     "react": {
       "version": "detect"
