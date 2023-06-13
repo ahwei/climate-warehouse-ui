@@ -8,5 +8,7 @@ export const formatDate = date =>
 
 // function is applied to the dates the ui receives from the api
 export const getISODate = date => {
-  return getIsDateValid(date) ? dayjs(new Date(date)) : date;
+  return getIsDateValid(date)
+    ? dayjs(new Date(date)).format('YYYY/MM/DD')
+    : date;
 };

@@ -91,7 +91,7 @@ const DateSelect = withTheme(
           mask="____-__-__"
           RegExp="/^d{4}-d{2}-d{2}$/"
           views={['year', 'month', 'day']}
-          value={getIsDateValid(dateValue) ? getISODate(dateValue) : null}
+          value={getIsDateValid(dateValue) ? dayjs(new Date(dateValue)) : null}
           onChange={newValue =>
             getIsDateValid(newValue)
               ? setDateValue(formatDate(newValue))
