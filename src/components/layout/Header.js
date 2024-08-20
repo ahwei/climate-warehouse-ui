@@ -3,15 +3,15 @@ import { useIntl } from 'react-intl';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
-import { LocaleSwitcher, Body, AppLogo, MyAccount } from '..';
+import { AppLogo, Body, LocaleSwitcher, MyAccount } from '..';
 
 const Headline = styled('div')`
-  border-top: 8px solid ${props => props.theme.colors.default.secondary};
+  border-bottom: 8px solid ${props => props.theme.colors.default.shade4};
   padding-top: 5px;
   padding-bottom: 5px;
   width: 100%;
-  height: 4rem;
-  background-color: ${props => props.theme.colors.default.primary};
+  height: 3rem;
+  background-color: ${props => props.theme.colors.default.white};
 `;
 
 const LogoContainer = styled('div')`
@@ -44,7 +44,7 @@ const Header = () => {
     <Headline>
       <StyledLocalContainer>
         <LogoContainer>
-          <AppLogo width="100%" height="80%" />
+          <AppLogo width="100%" height="80%" type="png" />
         </LogoContainer>
         <HomeOrgUidContainer>
           {serverAddress && (

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Body } from '../../components';
 
 const StyledLink = styled('div')`
-  color: ${props => props.theme.colors.default.secondary};
+  color: ${props => props.theme.colors.default.black};
   :hover {
-    color: ${props => props.theme.colors.default.secondaryDark};
+    color: ${props => props.theme.colors.default.black};
   }
 `;
 

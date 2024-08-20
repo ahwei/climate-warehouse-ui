@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ThemeProvider } from 'styled-components';
 import { IntlProvider } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
 
 import {
   getUser,
@@ -14,9 +14,9 @@ import {
 } from './store/actions/climateWarehouseActions';
 import { initiateSocket } from './store/actions/socket';
 
-import { loadLocaleData } from './translations';
 import { AppNavigator } from './navigation';
 import theme from './theme';
+import { loadLocaleData } from './translations';
 
 import {
   IndeterminateProgressOverlay,
@@ -62,8 +62,7 @@ const App = () => {
       <IntlProvider
         locale="en"
         defaultLocale="en"
-        messages={translationTokens.default}
-      >
+        messages={translationTokens.default}>
         <AppNavigator />
       </IntlProvider>
       <SocketStatusContainer socketStatus={socketStatus} />

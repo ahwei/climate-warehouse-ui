@@ -1,10 +1,10 @@
+import { MenuItem, Select } from '@mui/material';
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
-import { Select, MenuItem } from '@mui/material';
-import { LANGUAGE_CODES } from '../../translations';
-import { setLocale } from '../../store/actions/app';
+import styled, { withTheme } from 'styled-components';
 import { SelectSizeEnum, SelectTypeEnum } from '..';
+import { setLocale } from '../../store/actions/app';
+import { LANGUAGE_CODES } from '../../translations';
 
 const Container = styled('div')`
   display: flex;
@@ -14,13 +14,13 @@ const Container = styled('div')`
   .MuiSelect-root,
   .MuiSvgIcon-root,
   .MuiInputBase-inputSizeSmall {
-    color: ${props => props.theme.colors[props.selectedTheme].secondary};
+    color: ${props => props.theme.colors[props.selectedTheme].black};
   }
 
   .MuiSelect-root:hover,
   .MuiSvgIcon-root:hover,
   .MuiInputBase-inputSizeSmall:hover {
-    color: ${props => props.theme.colors[props.selectedTheme].secondaryDark};
+    color: ${props => props.theme.colors[props.selectedTheme].black};
   }
 
   .MuiOutlinedInput-notchedOutline {
@@ -42,8 +42,7 @@ const LocaleSwitcher = withTheme(() => {
         size={SelectSizeEnum.small}
         type={SelectTypeEnum.basic}
         value={appStore.locale}
-        onChange={handleLocaleChange}
-      >
+        onChange={handleLocaleChange}>
         {Object.keys(LANGUAGE_CODES).map(key => (
           <MenuItem key={LANGUAGE_CODES[key]} value={LANGUAGE_CODES[key]}>
             {key}

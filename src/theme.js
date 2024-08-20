@@ -25,18 +25,19 @@ const headings = {
  */
 const colors = {
   default: {
-    primary: '#00242C',
-    secondary: '#2dec7c',
-    secondaryDark: '#1b9b5c',
+    primary: '#000',
+    secondary: '#03ADF4',
+    secondaryDark: '#03ADF4',
     shade1: '#4d5c62',
     shade2: '#7f8b90',
     shade3: '#a5adb1',
-    shade4: '#c8d0d5',
+    shade4: '#cbd0d4',
     shade5: '#dee6eb',
     shade6: '#ecf3f7',
     red: '#ff5c53',
     redDark: '#c64740',
     white: '#FFFFFF',
+    black: '#000000',
     blue: '#47b2fa',
     background: '#c8d0d5',
     onSurface: '#000000',

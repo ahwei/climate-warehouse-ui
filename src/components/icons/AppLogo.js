@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../assets/img/CAD-Logo-RGB-Full-Colour.png';
+import logo from '../../assets/img/Logo-CodeGreen.png';
 
 const AppLogo = ({ width, height, type = 'svg' }) => {
   if (type === 'png') return <img width={width} height={height} src={logo} />;
@@ -21,14 +21,12 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
         <g
           id="Group_11144"
           data-name="Group 11144"
-          transform="translate(0 180)"
-        >
+          transform="translate(0 180)">
           <g
             id="Group_11119"
             data-name="Group 11119"
             transform="translate(0 -180)"
-            clipPath="url(#clip-path)"
-          >
+            clipPath="url(#clip-path)">
             <g id="Group_11116" data-name="Group 11116">
               <path
                 id="Path_12457"
@@ -41,8 +39,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11117"
               data-name="Group 11117"
-              transform="translate(19.11 19.11)"
-            >
+              transform="translate(19.11 19.11)">
               <path
                 id="Path_12458"
                 data-name="Path 12458"
@@ -54,8 +51,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11118"
               data-name="Group 11118"
-              transform="translate(62.933 9.919)"
-            >
+              transform="translate(62.933 9.919)">
               <path
                 id="Path_12459"
                 data-name="Path 12459"
@@ -68,8 +64,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
           <g
             id="Group_11120"
             data-name="Group 11120"
-            transform="translate(74.458 -169.973)"
-          >
+            transform="translate(74.458 -169.973)">
             <path
               id="Path_12461"
               data-name="Path 12461"
@@ -82,13 +77,11 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             id="Group_11126"
             data-name="Group 11126"
             transform="translate(0 -180)"
-            clipPath="url(#clip-path)"
-          >
+            clipPath="url(#clip-path)">
             <g
               id="Group_11121"
               data-name="Group 11121"
-              transform="translate(83.674 9.415)"
-            >
+              transform="translate(83.674 9.415)">
               <path
                 id="Path_12462"
                 data-name="Path 12462"
@@ -100,8 +93,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11122"
               data-name="Group 11122"
-              transform="translate(92.89 13.303)"
-            >
+              transform="translate(92.89 13.303)">
               <path
                 id="Path_12463"
                 data-name="Path 12463"
@@ -113,8 +105,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11123"
               data-name="Group 11123"
-              transform="translate(107.02 13.303)"
-            >
+              transform="translate(107.02 13.303)">
               <path
                 id="Path_12464"
                 data-name="Path 12464"
@@ -126,8 +117,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11124"
               data-name="Group 11124"
-              transform="translate(116.866 10.837)"
-            >
+              transform="translate(116.866 10.837)">
               <path
                 id="Path_12465"
                 data-name="Path 12465"
@@ -139,8 +129,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11125"
               data-name="Group 11125"
-              transform="translate(125.74 13.303)"
-            >
+              transform="translate(125.74 13.303)">
               <path
                 id="Path_12466"
                 data-name="Path 12466"
@@ -153,8 +142,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
           <g
             id="Group_11127"
             data-name="Group 11127"
-            transform="translate(141.922 -169.973)"
-          >
+            transform="translate(141.922 -169.973)">
             <path
               id="Path_12468"
               data-name="Path 12468"
@@ -167,13 +155,11 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             id="Group_11137"
             data-name="Group 11137"
             transform="translate(0 -180)"
-            clipPath="url(#clip-path)"
-          >
+            clipPath="url(#clip-path)">
             <g
               id="Group_11128"
               data-name="Group 11128"
-              transform="translate(153.874 13.303)"
-            >
+              transform="translate(153.874 13.303)">
               <path
                 id="Path_12469"
                 data-name="Path 12469"
@@ -185,8 +171,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11129"
               data-name="Group 11129"
-              transform="translate(163.81 10.837)"
-            >
+              transform="translate(163.81 10.837)">
               <path
                 id="Path_12470"
                 data-name="Path 12470"
@@ -198,8 +183,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11130"
               data-name="Group 11130"
-              transform="translate(173.26 9.415)"
-            >
+              transform="translate(173.26 9.415)">
               <path
                 id="Path_12471"
                 data-name="Path 12471"
@@ -211,8 +195,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11131"
               data-name="Group 11131"
-              transform="translate(181.648 13.303)"
-            >
+              transform="translate(181.648 13.303)">
               <path
                 id="Path_12472"
                 data-name="Path 12472"
@@ -224,8 +207,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11132"
               data-name="Group 11132"
-              transform="translate(193.15 13.302)"
-            >
+              transform="translate(193.15 13.302)">
               <path
                 id="Path_12473"
                 data-name="Path 12473"
@@ -237,8 +219,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11133"
               data-name="Group 11133"
-              transform="translate(63.833 31.375)"
-            >
+              transform="translate(63.833 31.375)">
               <path
                 id="Path_12474"
                 data-name="Path 12474"
@@ -250,8 +231,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11134"
               data-name="Group 11134"
-              transform="translate(75.496 34.651)"
-            >
+              transform="translate(75.496 34.651)">
               <path
                 id="Path_12475"
                 data-name="Path 12475"
@@ -263,8 +243,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11135"
               data-name="Group 11135"
-              transform="translate(85.342 32.186)"
-            >
+              transform="translate(85.342 32.186)">
               <path
                 id="Path_12476"
                 data-name="Path 12476"
@@ -276,8 +255,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11136"
               data-name="Group 11136"
-              transform="translate(94.378 34.651)"
-            >
+              transform="translate(94.378 34.651)">
               <path
                 id="Path_12477"
                 data-name="Path 12477"
@@ -290,8 +268,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
           <g
             id="Group_11138"
             data-name="Group 11138"
-            transform="translate(110.561 -148.625)"
-          >
+            transform="translate(110.561 -148.625)">
             <path
               id="Path_12479"
               data-name="Path 12479"
@@ -304,13 +281,11 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             id="Group_11143"
             data-name="Group 11143"
             transform="translate(0 -180)"
-            clipPath="url(#clip-path)"
-          >
+            clipPath="url(#clip-path)">
             <g
               id="Group_11139"
               data-name="Group 11139"
-              transform="translate(121.402 34.76)"
-            >
+              transform="translate(121.402 34.76)">
               <path
                 id="Path_12480"
                 data-name="Path 12480"
@@ -322,8 +297,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11140"
               data-name="Group 11140"
-              transform="translate(131.086 34.759)"
-            >
+              transform="translate(131.086 34.759)">
               <path
                 id="Path_12481"
                 data-name="Path 12481"
@@ -335,8 +309,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11141"
               data-name="Group 11141"
-              transform="translate(141.454 34.651)"
-            >
+              transform="translate(141.454 34.651)">
               <path
                 id="Path_12482"
                 data-name="Path 12482"
@@ -348,8 +321,7 @@ const AppLogo = ({ width, height, type = 'svg' }) => {
             <g
               id="Group_11142"
               data-name="Group 11142"
-              transform="translate(150.67 32.186)"
-            >
+              transform="translate(150.67 32.186)">
               <path
                 id="Path_12483"
                 data-name="Path 12483"

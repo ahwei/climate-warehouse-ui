@@ -13,7 +13,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
-    icon: path.join(__dirname, '/../public/favicon.ico'),
+    icon: path.join(__dirname, '/../public/favicon.png'),
     title: 'Climate Action Data Trust',
   });
 

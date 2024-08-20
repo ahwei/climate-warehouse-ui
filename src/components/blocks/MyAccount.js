@@ -6,24 +6,24 @@ import styled from 'styled-components';
 import { validateUrl } from '../../utils/urlUtils';
 
 import {
-  Modal,
-  modalTypeEnum,
   Body,
-  InputSizeEnum,
-  StandardInput,
-  InputVariantEnum,
   InputContainer,
+  InputSizeEnum,
+  InputVariantEnum,
+  Link,
+  Modal,
+  ModalFormContainerStyle,
+  modalTypeEnum,
+  StandardInput,
   StyledFieldContainer,
   StyledLabelContainer,
-  ModalFormContainerStyle,
-  Link,
 } from '../../components';
 
 import {
+  refreshApp,
   signIn,
   signInFromLocalStorage,
   signOut,
-  refreshApp,
 } from '../../store/actions/app';
 
 const StyledMyAccountContainer = styled('div')`
@@ -67,8 +67,7 @@ const MyAccount = ({ openModal = false, onClose, isHeader = true }) => {
               onClick={() => {
                 dispatch(signOut());
                 dispatch(refreshApp(true));
-              }}
-            >
+              }}>
               <Link>
                 <FormattedMessage id="sign-out" />
               </Link>
